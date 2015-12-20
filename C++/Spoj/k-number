@@ -1,0 +1,23 @@
+#include<iostream>
+#include<math.h>
+int main()
+{   unsigned long a,b,c,d,sum,count;
+    scanf("%lu",&c);
+    while(a>0)
+    {   scanf("%lu %lu",&b,&c);
+        count=0;
+        while(b<=c)
+        {  if(b==1)
+                b+=1;
+            if(b==2)
+                count+=1;
+            if(b/sqrt(b)==sqrt(b))
+                count+=1;
+            
+            b=b+1;
+        }
+        printf("&lu\n",count);
+        a--;
+    }
+    return 0;
+}
